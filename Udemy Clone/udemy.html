@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UDEMY CLONE</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/cc36453ef5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navBar SmallFont">
+        <div class="logo">
+          <img
+            src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg "
+            alt=""
+          />
+        </div>
+        <div class="item dropdown">
+        <span>Categories ▼ </span>
+        <div class="content left">
+            <ul class="list">
+              <li><a href="#">Development</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Finance & Accounting</a></li>
+              <li><a href="#">IT & Software</a></li>
+              <li><a href="#">Office Productivity</a></li>
+              <li><a href="#">Personal Development</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Music</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="item search-form-container" >
+          <form>
+            <input id="search_text" onkeyup="searchBox()" type="text" placeholder="search" />
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <ul class="right">
+          <li class="item dropdown">
+            <span>Udemy Business</span>
+            <div class="content">
+            <div class="panel">
+              <p class="pFont marbot2 text-center">Get your team access to over 25,000 top Udemy courses, anytime, anywhere.</p>
+            <div>
+              <a href="#" class="buttton reverse">Try Udemy Business</a>
+            </div>
+            </div>
+          </div>
+          </li>
+          <li class="item dropdown">
+            <span>Teach On Udemy </span>
+            <div class="content">
+              <div class="panel ">
+                <p class="pFont marbot2 text-center">Get your team access to over 25,000 top Udemy courses, anytime, anywhere.</p>
+              <div>
+                <a href="#" class="buttton reverse">Try Udemy Business</a>
+              </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <span>Plans and Pricing </span>
+          </li>
+          <li class="item">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          <li class="item ">
+            <a href="#" class="button">Log In</a>
+          </li>
+          <li class="item">
+            <a href="#"  class="button reverse">Sign Up</a></li>
+          <li>
+            <a href="#" class="item reverse"><i class="fa-solid fa-globe"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div onclick="addNew()"></div>
+    <div id="overlay" class="overlay" onclick="addNew()"></div>
+    <div id="popup" class="popup">
+      <form id="popupForm">
+        <label for="imageSource">Image Source:</label><br>
+        <input type="text" id="imageSource" name="imageSource"><br><br>
+        <label for="content">Content:</label><br>
+        <input type="text" id="content" name="content"><br>
+        <label for="star">star:</label><br>
+        <input type="text" id="star" name="content"><br>
+        <label for="price">price:</label><br>
+        <input type="text" id="price" name="content"><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    </div>
+    <div id="card_parent"></div>
+    <div class="newbox"></div>
+  <script src="work.js"></script>
+  </body>
+</html>
